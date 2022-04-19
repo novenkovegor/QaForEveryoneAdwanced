@@ -2,37 +2,30 @@ package homework.hw7;
 
 public class Employee {
 
-    int BaseSalary;
-    String Name;
-    int Salary;
+    private double baseSalary;
+    private String name;
 
-    public Employee(int baseSalary, String name, int salary) {
-        BaseSalary = baseSalary;
-        Name = name;
-        Salary = salary;
+
+
+    public double getBaseSalary() {
+        return baseSalary;
     }
 
-    public int getBaseSalary() {
-        return BaseSalary;
-    }
 
-    public void setBaseSalary(int baseSalary) {
-        BaseSalary = baseSalary;
+    public void setBaseSalary(double baseSalary) {
+        this.baseSalary = baseSalary;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
-    public int getSalary() {
-        return Salary;
+    public double getSalary() {
+        return baseSalary;
     }
 
-    public void setSalary(int salary) {
-        Salary = salary;
-    }
 }
